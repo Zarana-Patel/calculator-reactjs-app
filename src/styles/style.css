@@ -1,0 +1,54 @@
+body {
+    background-color: gray;
+  }
+  
+  .calculator-title{
+    margin: 10px;
+    color: white;
+  }
+  .app-container{
+    text-align: center;
+    padding:8px;
+    display: grid;
+    place-items: center;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-template-areas:  ".  .  ."
+                          ". box ."
+                          ".  .  ."; 
+  }
+  .cal-frame{
+    grid-area: box;
+    background: #224662;
+    border: 1px solid black;
+    width: 600px;
+  }
+  .frame{
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .display-screen{
+    height: 50px;
+    background: white;
+  }
+  .button-row{
+    display: flex;
+     border: 20px;
+     flex: 1 0 auto;
+     padding: 5px;
+   }
+   button{
+    width: 90px;
+   }
+  .screen-row{
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    border:0.5px solid #D3D3D3;
+   
+  }
+  .screen{
+    background: white;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
